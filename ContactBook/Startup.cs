@@ -33,7 +33,7 @@ namespace ContactBook
             options.UseSqlServer(Configuration.GetConnectionString("Default")));
             services.AddIdentity<User, IdentityRole>(options =>
             {
-                // 
+                // ...
             }).AddEntityFrameworkStores<ContactBookDbContext>();
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IContactRepository, ContactRepository>();
